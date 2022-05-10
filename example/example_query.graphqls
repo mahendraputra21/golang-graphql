@@ -1,0 +1,21 @@
+mutation createMovie {
+    createMovie(
+      input: {
+          title: "Rise of Empire Pt2"
+        url: "https://riseofempirept2.com"
+    }
+    ){
+      id
+    }
+  }
+
+
+query getMovies {
+  movies {
+    id
+    title
+    releaseDate
+  }
+}
+
+
